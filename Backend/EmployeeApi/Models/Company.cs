@@ -1,5 +1,6 @@
 namespace EmployeeApi.Models;
 
+// create the company model based on sql schema
 public class Company
 {
     public int ID { get; set; }
@@ -7,6 +8,5 @@ public class Company
     public string Domain { get; set; } = null!;
     public string? Industry { get; set; }
     public string? Website { get; set; }
-
-    public ICollection<Employee>? Employees { get; set; }
+    public ICollection<Employee>? Employees { get; set; } 
 }
