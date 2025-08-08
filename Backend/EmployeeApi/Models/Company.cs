@@ -11,9 +11,6 @@ public class Company
     public string Domain { get; set; } = null!;
     public string? Industry { get; set; }
     public string? Website { get; set; }
-    [JsonIgnore]
-
-    public ICollection<Employee>? Employees { get; set; } 
     
 
 }
