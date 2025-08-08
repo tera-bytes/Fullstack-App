@@ -26,8 +26,11 @@ The backend is structured into these folders:
 Includes the main UI and interaction with the .NET backend. Uses Vite instead of Create React App, and the base url is stored in .env.local as VITE_API_BASE=http://localhost:5192/api. The port number can be changed to whatever the host of your backend API system is.
 
 **api/** Creates the connection to the http requests.
+
 **Components/** React components for the UI, including the input form, paginated view, company dropdown, and default layout
+
 **context/** Uses ContextAPI for state management. Wraps parts of app to give access to shared states, interacts with context from components, and has crud methods for api calls.
+
 **pages/** Provides paginated view for employees
 
 
