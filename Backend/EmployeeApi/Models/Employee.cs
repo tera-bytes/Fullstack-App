@@ -11,6 +11,5 @@ public class Employee
     public int CompanyID { get; set; }
     public bool IsActive { get; set; } = true;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public Company? Company { get; set; }
 
 }
