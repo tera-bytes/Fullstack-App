@@ -3274,6 +3274,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.7",
+      "Microsoft.EntityFrameworkCore.Design >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.8",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4",
       "Swashbuckle.AspNetCore >= 9.0.3"
@@ -3285,11 +3286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tahtu\\Desktop\\Fullstack-App\\EmployeeApi\\EmployeeApi.csproj",
+      "projectUniqueName": "C:\\Users\\tahtu\\Desktop\\Fullstack-App\\Backend\\EmployeeApi\\EmployeeApi.csproj",
       "projectName": "EmployeeApi",
-      "projectPath": "C:\\Users\\tahtu\\Desktop\\Fullstack-App\\EmployeeApi\\EmployeeApi.csproj",
+      "projectPath": "C:\\Users\\tahtu\\Desktop\\Fullstack-App\\Backend\\EmployeeApi\\EmployeeApi.csproj",
       "packagesPath": "C:\\Users\\tahtu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tahtu\\Desktop\\Fullstack-App\\EmployeeApi\\obj\\",
+      "outputPath": "C:\\Users\\tahtu\\Desktop\\Fullstack-App\\Backend\\EmployeeApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tahtu\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3325,6 +3326,12 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[9.0.7, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.8, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
