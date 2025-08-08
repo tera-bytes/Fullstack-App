@@ -27,7 +27,7 @@ Includes the main UI and interaction with the .NET backend. Uses Vite instead of
 
 **api/** Creates the connection to the http requests.
 
-**Components/** React components for the UI, including the input form, paginated view, company dropdown, and default layout
+**Components/** React components for the UI, including the input form, paginated view, company dropdown, and default layout. Included Gravatar as third party API implementation
 
 **context/** Uses ContextAPI for state management. Wraps parts of app to give access to shared states, interacts with context from components, and has crud methods for api calls.
 
