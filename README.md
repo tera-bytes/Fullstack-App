@@ -33,4 +33,5 @@ Includes the main UI and interaction with the .NET backend. Uses Vite instead of
 
 **pages/** Provides paginated view for employees
 
-
+## How to Run
+The frontend and backend must run simultaneously. For this project, VSCode was used. First, in the Backend/EmployeeApi directory, open terminal and execute "dotnet run". Then in Frontend/src directory, open terminal and execute the command "npm run dev" and click on the local host link to interact with the application.
