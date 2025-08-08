@@ -5,6 +5,15 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1) Add CORS
+builder.Services.AddCors(opt =>
+{
+    opt.AddDefaultPolicy(p =>
+        p.WithOrigins("http://localhost:5173") // Vite dev origin
+         .AllowAnyHeader()
+         .AllowAnyMethod());
+});
+
 // Add services to the container
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -30,6 +39,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors(); // before MapControllers
+
 
 app.MapControllers(); 
 
