@@ -2,9 +2,9 @@
 
 This project includes the fullstack development of an employee contact management system built using the following:
 
-- REACT and TypeScript for frontend, Context API for state management
-- .NET with EF Core for backend
-- Postgres SQL for the database
+- REACT 18 and TypeScript for frontend, Context API for state management
+- .NET 9.0 with EF Core for backend
+- Postgres SQL 17 for the database
 
 ## Database
 The database script is provided under the db folder. For this project, the database was hosted on pgAdmin. The file `appsettings.json` contains the connection string, where [YOUR_PASSWORD] should be replaced with a real password. The schema consists of employees and companies as two separate tables.
